@@ -41,8 +41,13 @@
 	];
 
 	$: filteredDishes = searchTerm.length > 0
-		? allDishes.filter(d => d.name.toLowerCase().includes(searchTerm.toLowerCase()))
-		: allDishes.filter(d => d.category === categories[currentCategory]);
+	? allDishes.filter(d =>
+		(d.name + ' ' + d.price)
+			.toLowerCase()
+			.includes(searchTerm.toLowerCase())
+	)
+	: allDishes.filter(d => d.category === categories[currentCategory]);
+
 
 	function handleChangeCategory(index: number) {
 		currentCategory = index;
