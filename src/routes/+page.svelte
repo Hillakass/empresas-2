@@ -33,10 +33,10 @@
 	<!-- Usuario -->
 	<div class="bg-white rounded-lg shadow-md p-6 text-center">
 		<img src={usuario} alt="User Profile" class="w-24 h-24 rounded-full mx-auto mb-4" />
-		<h2 class="text-2xl font-semibold text-gray-800">LokitoMazNah</h2>
-		<p class="text-sm text-gray-600">Fabian Concha</p>
-		<p class="text-sm text-gray-600">fabian.concha@ucsp.edu.pe</p>
-		<p class="text-sm text-gray-600">Amante de la gastronomía criolla y de ti</p>
+		<h2 class="text-2xl font-semibold text-gray-800">Srta. Grecia</h2>
+		<p class="text-sm text-gray-600">Grecia Benavides</p>
+		<p class="text-sm text-gray-600">Influencer y creadora de contenido</p>
+		<p class="text-sm text-gray-600">Apasionada por inspirar y conectar con mi audiencia</p>
 	</div>
 
 	<!-- Buscador -->

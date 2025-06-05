@@ -18,11 +18,6 @@
 			icon: UsersRound,
 			href: "/subs",
 		},
-		{
-			name: "Nuevos",
-			icon: Package,
-			href: "/menus",
-		},
 	];
 </script>
 

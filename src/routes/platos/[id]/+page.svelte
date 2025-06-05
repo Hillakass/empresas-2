@@ -48,7 +48,7 @@
   
 	// Datos para la nueva reseña
 	let newReview = {
-	  reviewer: "LokitoMazNah", // Nombre del usuario (estático)
+	  reviewer: "Srta. Grecia", // Nombre del usuario (estático)
 	  rating: 1,
 	  comment: "",
 	  category: currentCategory as ReviewCategory,
@@ -67,7 +67,7 @@
 		});
   
 		// Limpiar el formulario después de agregar la reseña
-		newReview = { reviewer: "LokitoMazNah", rating: 1, comment: "", category: currentCategory, avatar: usuarioAvatar };
+		newReview = { reviewer: "Srta. Grecia", rating: 1, comment: "", category: currentCategory, avatar: usuarioAvatar };
 	  } else {
 		alert("Por favor complete todos los campos.");
 	  }
