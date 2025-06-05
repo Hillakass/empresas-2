@@ -1,8 +1,16 @@
 <script lang="ts">
 	import Nav from "$lib/components/Nav.svelte";
 	import { Star } from "@lucide/svelte"; // Usamos los iconos de Lucide
-	import salchipapa from "$lib/images/salchipapa.jpg"; // Imagen del restaurante
+	import chaqchao from "$lib/images/chaqchao.jpg"; // Imagen del restaurante
 	import usuarioAvatar from "$lib/images/usuario.jpg"; // Avatar de usuario
+	import usuarioAvatar2 from "$lib/images/usuario2.jpg"; // Avatar de usuario
+	import usuarioAvatar3 from "$lib/images/usuario3.jpg"; // Avatar de usuario
+	import usuarioAvatar4 from "$lib/images/usuario4.jpg"; // Avatar de usuario
+	//import usuarioAvatar5 from "$lib/images/usuario5.jpg"; // Avatar de usuario
+	//import usuarioAvatar6 from "$lib/images/usuario6.jpg"; // Avatar de usuario
+	//import usuarioAvatar7 from "$lib/images/usuario7.jpg"; // Avatar de usuario
+	//import usuarioAvatar8 from "$lib/images/usuario8.jpg"; // Avatar de usuario
+	//import usuarioAvatar9 from "$lib/images/usuario9.jpg"; // Avatar de usuario
 	
 	// Definimos las categorías con un tipo específico
 	type ReviewCategory = "Atencion" | "Comida" | "Ambiente" | "Limpieza";
@@ -17,28 +25,28 @@
   
 	// Datos del restaurante con categorías de reseñas
 	let restaurant = {
-	  name: "La Casa de la Salchipapa",  // Nombre actualizado del restaurante
-	  img: salchipapa, // Usamos la imagen importada del restaurante
+	  name: "Chaqchao",  // Nombre actualizado del restaurante
+	  img: chaqchao, // Usamos la imagen importada del restaurante
 	  category: "Snack Restaurante",  // Categoría actualizada
 	  status: "ABIERTO AHORA",
-	  distance: "500 M",
-	  price: 12,
+	  //distance: "500 M",
+	  //price: 10,
 	  reviews: {
 		Atencion: [
-		  { reviewer: "Camila", rating: 5, comment: "Muy atentos, excelente comida!", avatar: usuarioAvatar },
-		  { reviewer: "Roberto", rating: 4, comment: "Buen trato y rapidez.", avatar: usuarioAvatar }
+		  { reviewer: "Camila", rating: 5, comment: "Muy atentos, excelente comida!", avatar: usuarioAvatar2 },
+		  { reviewer: "Roberto", rating: 4, comment: "Buen trato y rapidez.", avatar: usuarioAvatar2 }
 		],
 		Comida: [
-		  { reviewer: "Umay", rating: 5, comment: "Buena carne y porciones grandes.", avatar: usuarioAvatar },
-		  { reviewer: "Juan", rating: 4, comment: "El sabor es excelente, aunque un poco caro.", avatar: usuarioAvatar }
+		  { reviewer: "Umay", rating: 4, comment: "El cheesecake estaba delicioso y la porción grande.", avatar: usuarioAvatar3 },
+		  { reviewer: "Juan", rating: 5, comment: "El chocolate de chaqchao 10/10, tienen que probarlo.", avatar: usuarioAvatar2 }
 		],
 		Ambiente: [
-		  { reviewer: "Pedro", rating: 5, comment: "Muy agradable y cómodo, la música excelente.", avatar: usuarioAvatar },
-		  { reviewer: "Sofia", rating: 4, comment: "El ambiente es muy bueno, pero un poco ruidoso.", avatar: usuarioAvatar }
+		  { reviewer: "Pedro", rating: 5, comment: "Muy agradable y cómodo, la música excelente.", avatar: usuarioAvatar2 },
+		  { reviewer: "Sofia", rating: 4, comment: "El ambiente es muy bueno, pero un poco ruidoso.", avatar: usuarioAvatar4 }
 		],
 		Limpieza: [
-		  { reviewer: "Lucas", rating: 5, comment: "Muy limpio y ordenado.", avatar: usuarioAvatar },
-		  { reviewer: "Maria", rating: 4, comment: "Buena limpieza, aunque faltan más baños.", avatar: usuarioAvatar }
+		  { reviewer: "Lucas", rating: 5, comment: "Muy limpio y ordenado.", avatar: usuarioAvatar2 },
+		  { reviewer: "Maria", rating: 4, comment: "Buena limpieza, aunque faltan más baños.", avatar: usuarioAvatar2 }
 		]
 	  }
 	};
@@ -79,7 +87,7 @@
 	<div class="mb-6 text-center">
 	  <img src={restaurant.img} alt={restaurant.name} class="w-full h-48 object-cover rounded-lg shadow-md" />
 	  <h1 class="text-4xl font-extrabold text-white mb-2">{restaurant.name}</h1>
-	  <p class="text-xl text-white">{restaurant.category} - {restaurant.status} · {restaurant.distance} · S/ {restaurant.price}</p>
+	  <p class="text-xl text-white">{restaurant.category} - {restaurant.status} </p> //· {restaurant.distance} · S/ {restaurant.price}
 	</div>
   
 	<!-- Categorías con scroll horizontal -->

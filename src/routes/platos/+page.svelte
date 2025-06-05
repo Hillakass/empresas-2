@@ -81,7 +81,7 @@
 				class:text-black={currentCategory !== index}
 			>
 				<div class="flex items-center justify-center gap-2">
-					<img src={cat === "Cafeteria" ? food : cat === "Comida Rapida" ? dessert : chaqchao} class="w-12 h-12 rounded-lg object-cover" />
+					<img src={cat === "Cafeteria" ? chaqchao : cat === "Comida Rapida" ? dessert : food} class="w-12 h-12 rounded-lg object-cover" />
 					<span>{cat}</span>
 				</div>
 			</button>
