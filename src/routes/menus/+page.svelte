@@ -63,7 +63,6 @@
 			bind:value={searchTerm}
 			class="px-4 py-2 rounded-lg w-full max-w-xs text-sm bg-[#3a3a3a] text-white placeholder:text-gray-400 border-none focus:outline-none"
 		/>
-		<span class="text-lg font-semibold text-white">S/ 0.00</span>
 	</div>
 
 	<h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4 text-white">
