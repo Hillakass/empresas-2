@@ -112,6 +112,13 @@ function cancelShare() {
   <!-- Puntos Destacados -->
   <div class="mb-6">
     <h2 class="text-2xl font-semibold mb-4 text-white">Points Destacados</h2>
+    <div class="mb-6">
+      <div class="bg-gradient-to-r from-amber-200 via-lime-200 to-emerald-100 text-gray-900 text-center p-3 rounded-xl shadow-md">
+        <p class="text-base font-semibold">
+          🍽️ ¿Ya te dijeron que eres la mejor persona para recomendar comida? 🍽️
+        </p>
+      </div>
+    </div>
 
     {#if currentPoints.length > 0}
       {#each currentPoints as point}
