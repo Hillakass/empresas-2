@@ -68,6 +68,15 @@
 		Menú
 	</h1>
 
+	<!-- Mensaje destacado -->
+	<div class="mb-6">
+		<div class="bg-gradient-to-r from-amber-100 via-lime-100 to-emerald-100 text-gray-900 text-center p-3 rounded-xl shadow-md">
+			<p class="text-base font-semibold">
+			🍽️ Desde tu última visita, hay 2 nuevos lugares top según tus gustos.  🍽️
+			</p>
+		</div>
+	</div>
+
 	<!-- Categorías -->
 	<div class="scrollable flex gap-2 whitespace-nowrap mb-6">
 		{#each categories as cat, index}
